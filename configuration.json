@@ -1,0 +1,9 @@
+{
+  "pretrained": true,
+  "yaml_file": "input_v1.yaml",
+  "epochs": 10,
+  "imgsz": 128,
+  "batch": 16,
+  "workers": 4,
+  "run": 0
+}

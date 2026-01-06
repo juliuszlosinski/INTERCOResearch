@@ -1,0 +1,7 @@
+train: "./YOLO_balanced_two_flags/images/train"
+val: "./YOLO_balanced_two_flags/images/val"
+test: "./YOLO_balanced_two_flags/images/test"
+
+names:
+  0: A
+  1: B
