@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "854e64072357903b",
+    "type": "split",
+    "children": [
+      {
+        "id": "389dd434e27dce56",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb7d37f0db85bd38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MobileNet (2017).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MobileNet (2017)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f896b5503a67a2f",
+    "type": "split",
+    "children": [
+      {
+        "id": "717d451435f05f93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57e97d7a6ee7f44f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1b7a5c0b36f4e235",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6663b906f167d342",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.5
+  },
+  "right": {
+    "id": "95c4280f44c5f9ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "b80b1270f8c46258",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd971be33799f4b9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MobileNet (2017).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for MobileNet (2017)"
+            }
+          },
+          {
+            "id": "13400cc98f18fd9f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AlexNet.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AlexNet"
+            }
+          },
+          {
+            "id": "79a8676db994c858",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fd41b36e58dacd2c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AlexNet.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of AlexNet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "57e97d7a6ee7f44f",
+  "lastOpenFiles": [
+    "ResNet (2015).md",
+    "MobileNet (2017).md",
+    "CNN architectures.md",
+    "Untitled",
+    "GoogLeNet (2014).md",
+    "VGGNet (2014).md",
+    "EfficientNet (2019).md",
+    "AlexNet (2012).md",
+    "ZFNet (2013).md",
+    "ResNeXt.md",
+    "ResNet-152.md",
+    "ResNet-50.md",
+    "ResNet-18.md",
+    "ResNet-34.md",
+    "ResNet-101.md"
+  ]
+}
