@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 from ultralytics import YOLO
 
+from adjusted_resnet18_yolov8m import AdjustedResNet18YOLOv8m
 from alexnet_yolov8m import AlexNetYOLOv8m
 from efficientnetb0_yolov8m import EfficientNetB0YOLOv8m
 from mobilenetv2_yolov8m import MobileNetv2YOLOv8m
@@ -34,7 +35,10 @@ def test_backbone(backbone_type="alexnet"):
         model.model.model[0] = MobileNetv2YOLOv8m(pretrained=True)
     elif backbone_type == "efficientnet-b0":
         model.model.model[0] = EfficientNetB0YOLOv8m(pretrained=True)
+    elif backbone_type == "adjusted-resnet-18":
+        model.model.model[0] = AdjustedResNet18YOLOv8m(pretrained=True)
     else:
+        model = YOLO("yolov8m.pt")
         print(f"Default mode")
 
     # 3. Show YOLO summary.
@@ -59,6 +63,7 @@ if __name__ == "__main__":
         "default",
         "mobilenetv2",
         "efficientnet-b0",
+        "adjusted-resnet-18",
     ]
     backbone_params_list = []
     total_params_list = []

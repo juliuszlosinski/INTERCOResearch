@@ -1,0 +1,32 @@
+Optymalizacja YOLOv8 z ResNet18 (adjusted).
+
+1. Liczba epok:
+   - Trenować 50–100 epok (25 epok to za mało dla ResNet18).
+
+2. Learning rate (LR):
+   - Początkowy LR: 0.001–0.005.
+   - Użyć harmonogramu LR (cosine lub linear).
+
+3. Freeze wstępnych warstw:
+   - Zamrozić początkowe 4–5 bloków backbone.
+   - Wykorzystuje wagi pretrenowane i przyspiesza naukę detektora.
+
+4. Rozmiar obrazu i batch size:
+   - Obrazy 512×512 dla szybszego uczenia.
+   - Większy batch stabilizuje uczenie mniejszych modeli.
+
+5. Augmentacja danych:
+   - Włączyć augmentację (augment=True).
+   - Opcjonalnie użyć mixup i mosaic dla lepszej generalizacji.
+
+6. Early stopping i checkpointy:
+   - Early stopping: patience=10–15 epok.
+   - Zapisywać checkpointy co kilka epok (save_period=5).
+
+7. Monitorowanie:
+   - Śledzić mAP50, mAP50-95 i loss.
+   - Jeśli loss spada, a mAP stoi → zmniejszyć LR lub zwiększyć liczbę epok.
+
+8. Uwagi dotyczące ResNet18:
+   - Mniej warstw niż CSPDarknet → wolniejsze uczenie i gorsze wychwytywanie złożonych cech w początkowych epokach.
+   - Więcej epok i delikatniejsze ustawienia hiperparametrów potrzebne, aby osiągnąć wyniki zbliżone do domyślnego YOLOv8.

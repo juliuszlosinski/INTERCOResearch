@@ -12,7 +12,7 @@ pretrained = config["pretrained"]
 yaml_file = config["yaml_file"]
 epochs = config["epochs"]
 imgsz = config["imgsz"]
-batch_size = config["batch"]
+batch = config["batch"]
 workers = config["workers"]
 
 interco_model = INTERCOYolov8m(type=type, pretrained=pretrained)

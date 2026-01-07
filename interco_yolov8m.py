@@ -6,6 +6,7 @@ from torchvision.models.mobilenetv2 import MobileNetV2
 from ultralytics import YOLO
 
 # Import AlexNet, ResNet18 backbones.
+from adjusted_resnet18_yolov8m import AdjustedResNet18YOLOv8m
 from alexnet_yolov8m import AlexNetYOLOv8m
 from efficientnetb0_yolov8m import EfficientNetB0YOLOv8m
 from mobilenetv2_yolov8m import MobileNetv2YOLOv8m
@@ -44,6 +45,9 @@ class INTERCOYolov8m(nn.Module):
         elif self.type == "mobilenetv2":
             self.model = YOLO("yolov8m.yaml")
             self.model.model.model[0] = MobileNetv2YOLOv8m(pretrained=True)
+        elif self.type == "adjusted-resnet-18":
+            self.model = YOLO("yolov8m.yaml")
+            self.model.model.model[0] = AdjustedResNet18YOLOv8m(pretrained=True)
         else:
             self.model = YOLO("yolov8m.pt")
 
