@@ -1,21 +1,23 @@
 import json
 
-from interco_yolov8m import INTERCOYolov8m
+from architectures.interco_yolov8m import INTERCOYolov8m
 
-with open("config.json", "r") as f:
+# CLASSIC ################################
+with open("configuration.json", "r") as f:
     config = json.load(f)
-
-type = "alexnet"
-run = 0
 
 pretrained = config["pretrained"]
 yaml_file = config["yaml_file"]
 epochs = config["epochs"]
 imgsz = config["imgsz"]
-batch = config["batch"]
+batch_size = config["batch"]
 workers = config["workers"]
+##########################################
 
-interco_model = INTERCOYolov8m(type=type, pretrained=pretrained)
+type = "alexnet"
+run = 1
+
+interco_model = INTERCOYolov8m(type=type)
 interco_model.print_model()
 interco_model.print_params()
 
@@ -24,6 +26,6 @@ if run:
         yaml_file=yaml_file,
         number_of_epochs=epochs,
         imgsz=imgsz,
-        batch=batch,
+        batch=batch_size,
         workers=workers,
     )

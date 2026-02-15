@@ -1,20 +1,17 @@
 import matplotlib.pyplot as plt
-import torch
 import torch.nn as nn
 from ultralytics import YOLO
 
-from adjusted_resnet18_yolov8m import AdjustedResNet18YOLOv8m
-from alexnet_yolov8m import AlexNetYOLOv8m
-from efficientnetb0_yolov8m import EfficientNetB0YOLOv8m
-from mobilenetv2_yolov8m import MobileNetv2YOLOv8m
-from resnet18_yolov8m import ResNet18YOLOv8m
-from resnet34_yolov8m import ResNet34YOLOv8m
-from vgg16_yolov8m import VGG16YOLOv8m
-
+from architectures.adjusted_resnet18_yolov8m import AdjustedResNet18YOLOv8m
+from architectures.alexnet_yolov8m import AlexNetYOLOv8m
+from architectures.efficientnetb0_yolov8m import EfficientNetB0YOLOv8m
+from architectures.mobilenetv2_yolov8m import MobileNetv2YOLOv8m
+from architectures.resnet18_yolov8m import ResNet18YOLOv8m
+from architectures.resnet34_yolov8m import ResNet34YOLOv8m
+from architectures.vgg16_yolov8m import VGG16YOLOv8m
 
 def count_params(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
-
 
 def test_backbone(backbone_type="alexnet"):
     print(f"\n=== Testing backbone: {backbone_type} ===")
@@ -52,7 +49,6 @@ def test_backbone(backbone_type="alexnet"):
     print(f"Total YOLOv8m params: {total_params:,}")
 
     return backbone_params, total_params
-
 
 if __name__ == "__main__":
     backbones = [
