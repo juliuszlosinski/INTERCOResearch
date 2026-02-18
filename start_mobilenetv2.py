@@ -26,6 +26,6 @@ if run:
         yaml_file=yaml_file,
         number_of_epochs=epochs,
         imgsz=imgsz,
-        batch=batch,
+        batch=batch_size,
         workers=workers,
     )
