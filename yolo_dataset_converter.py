@@ -100,3 +100,10 @@ def create_dataset(path_to_source_directory,
         source_label_path = f"{path_to_source_labels}/{category}/{source_label_file}"
         shutil.copy(source_image_path, target_image_path)
         shutil.copy(source_label_path, target_label_path)
+
+if __name__ == "__main__":
+    create_dataset(
+        path_to_source_directory="./SMOTE_balanced_flags",
+        path_to_output_directory="./YOLO_SMOTE_balanced_flags",
+        train_percent=0.7, test_percent=0.2, val_percent=0.1, shuffle=True
+    )
