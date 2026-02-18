@@ -12,11 +12,10 @@ epochs = config["epochs"]
 imgsz = config["imgsz"]
 batch_size = config["batch"]
 workers = config["workers"]
+run = int(config["run"])
 ##########################################
 
 type = "adjusted-resnet-18"
-run = int(config["run"])
-
 interco_model = INTERCOYolov8m(type=type, pretrained=pretrained)
 interco_model.print_model()
 interco_model.print_params()
@@ -26,6 +25,6 @@ if run:
         yaml_file=yaml_file,
         number_of_epochs=epochs,
         imgsz=imgsz,
-        batch=batch,
+        batch=batch_size,
         workers=workers,
     )
