@@ -1,7 +1,7 @@
 {
   "pretrained": true,
-  "yaml_file": "input_v1_2_classes.yaml",
-  "epochs": 10,
+  "yaml_file": "input_v1_26_classes.yaml",
+  "epochs": 100,
   "imgsz": 128,
   "batch": 16,
   "workers": 4,
