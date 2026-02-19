@@ -92,7 +92,8 @@ if __name__ == "__main__":
     ax.grid(axis="y", linestyle="--", alpha=0.7)
 
     plt.tight_layout()
-    plt.show()
+    plt.savefig("comparison_backobones.png")
+    plt.close()
 
     # 5. Print numeric comparison.
     print("\n=== Numeric Comparison ===")
